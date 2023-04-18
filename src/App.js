@@ -1,6 +1,11 @@
 import './App.css';
 import React from "react";
-import { Header } from './Components/Header/Navbar';
+import { Header } from './Components/Header/Navbar'
+import { Footer } from './Components/Footer/Footer'
+import { Home } from './Components/Home/Home'
+import { Icon } from './Components/Home/Icon';
+import {Booking} from './Components/Home/Booking'
+import {About} from './Components/Home/About'
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -24,6 +29,11 @@ function App() {
   return (
     <body>
       <Header/>
+      <Home/>
+      <Icon/>
+      <About/>
+      <Booking/>
+      <Footer/>
     </body>  
   );
 }
